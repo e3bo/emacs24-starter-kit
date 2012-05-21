@@ -1,0 +1,7 @@
+* gnus mail stuff
+
+#+begin_src emacs-lisp
+  (starter-kit-load "gnus" "bbdb")
+  (starter-kit-load "gnus" "pretty-summary")
+  (starter-kit-load "gnus" "imap")
+#+end_src
