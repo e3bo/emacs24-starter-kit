@@ -75,7 +75,7 @@ many email and/or newsgroup sources).
                  (nnimap-address "imap.gmail.com")
                  (nnimap-server-port 993)
                  (nnimap-stream ssl)
-                 (nnimap-authinfo-file "~/.authinfo.gpg"))
+                 (nnimap-authinfo-file "~/.authinfo.gpg")))
   
 #+end_src
 
