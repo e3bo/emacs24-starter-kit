@@ -84,10 +84,12 @@ Place a line like the following in =~/.authinfo=
   machine imap.gmail.com login your-name@gmail.com password your-password port 993
 #+end_src
 
-then make encrypt it and remove the original
+then make encrypt it and remove the original and any backups of the
+original made by your editor.
 #+begin_src sh
-  gpg -e ~/.authinfo
+  gpg -se ~/.authinfo
   rm ~/.authinfo
+  rm ~/.authinfo~
 #+end_src
 
 and make sure that no-one else can read it with
