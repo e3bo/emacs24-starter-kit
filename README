@@ -1,4 +1,5 @@
-This is a Literate Programming fork of the original Emacs Starter Kit
+This is a personal fork of a Literate Programming fork of the
+original Emacs Starter Kit.
 
 This should provide a saner set of defaults than you get normally with
 Emacs. It's intended for beginners, but provides a good elisp
@@ -12,7 +13,8 @@ The main advantage of this Emacs Starter Kit are
 - git provides for version control, backup, and sharing
 - easy instillation with no need to compile external packages
 
-The latest version is at http://github.com/eschulte/emacs24-starter-kit/
+The latest version of the upstream literate Programming fork is at
+http://github.com/eschulte/emacs24-starter-kit/
 
 For more information including use and instillation instructions see
 http://eschulte.github.com/emacs24-starter-kit/
