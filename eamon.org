@@ -30,15 +30,15 @@
      (sh . t)
      (ditaa . t)
      ))
-    
-  ;;(setq org-modules  
-  ;; '(org-bbdb 
-  ;;   org-gnus 
+  
+  ;;(setq org-modules
+  ;; '(org-bbdb
+  ;;   org-gnus
   ;;   org-jsinfo))
   
   (add-to-list 'org-modules 'org-habit)
   (require 'org-habit)
   
   (setq org-entities-user '(("hds" "\~" nil " " " " " " " ")))
-
+  
 #+end_src
