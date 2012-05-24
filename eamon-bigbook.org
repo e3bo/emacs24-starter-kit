@@ -4,7 +4,7 @@
   (setq org-agenda-files
    '("~/crypt/personal.org"
      "~/projects/organizer/lab.org"
-     "~/Dropbox/arra/hiv.org"
+     "~/projects/arra/hiv.org"
      "~/projects/organizer/misc.org"
      "~/projects/organizer/toastmasters.org"
      "~/projects/organizer/writing.org"
