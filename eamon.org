@@ -42,3 +42,12 @@
   (setq org-entities-user '(("hds" "\~" nil " " " " " " " ")))
   
 #+end_src
+
+* python IDE configuration
+#+begin_src emacs-lisp
+  (dolist (package '(python-mode))
+    (unless (package-installed-p package)
+      (package-install package)))
+
+  (starter-kit-load "python" "python")
+#+end_src
