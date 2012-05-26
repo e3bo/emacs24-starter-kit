@@ -30,6 +30,7 @@
      (sh . t)
      (ditaa . t)
      ))
+  (setq org-babel-python-mode 'python-mode)
   
   ;;(setq org-modules
   ;; '(org-bbdb
