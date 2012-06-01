@@ -60,3 +60,10 @@
 
   (starter-kit-load "python" "python")
 #+end_src
+
+* ess
+
+#+BEGIN_SRC emacs-lisp
+  (setq load-path (cons "/usr/share/emacs/site-lisp/ess" load-path))
+  (load "/usr/share/emacs/site-lisp/ess/ess-site")  
+#+END_SRC
