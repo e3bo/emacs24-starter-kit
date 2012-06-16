@@ -5,6 +5,9 @@
 ;; This is the first thing to get loaded.
 ;;
 
+;; Use org-mode in AUR package
+(require 'org-install)
+
 ;; remember this directory
 (setq starter-kit-dir
       (file-name-directory (or load-file-name (buffer-file-name))))
