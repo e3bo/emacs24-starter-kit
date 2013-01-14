@@ -1,9 +1,9 @@
 * gnus configuration
 
 #+begin_src emacs-lisp
-  (starter-kit-load "gnus" "bbdb")
-  (starter-kit-load "gnus" "pretty-summary")
-  (starter-kit-load "gnus" "imap")
+;;  (starter-kit-load "gnus" "bbdb")
+;;  (starter-kit-load "gnus" "pretty-summary")
+;;  (starter-kit-load "gnus" "imap")
 
 #+end_src
 
@@ -48,8 +48,8 @@
 ** Exporting bibtex citations to HTML
 
 #+begin_src emacs-lisp
-  (add-to-list 'org-modules 'org-exp-bibtex)
-  (require 'org-exp-bibtex)
+  ;(add-to-list 'org-modules 'org-exp-bibtex)
+  ;(require 'org-exp-bibtex)
 #+end_src
 
 * python IDE configuration
