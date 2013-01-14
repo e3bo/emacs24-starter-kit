@@ -44,7 +44,7 @@
   
   (add-to-list 'load-path "~/.emacs.d/site-lisp")
 #+end_src
-
+  
 ** Exporting bibtex citations to HTML
 
 #+begin_src emacs-lisp
