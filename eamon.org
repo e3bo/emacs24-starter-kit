@@ -19,6 +19,7 @@
   
   (global-font-lock-mode 1)
   (setq org-export-email-info nil)
+  (setq org-enforce-todo-dependencies t)
   
   (setq org-default-notes-file "~/projects/organizer/notes.org")
   
