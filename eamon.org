@@ -60,9 +60,31 @@
   (dolist (package '(python-mode))
     (unless (package-installed-p package)
       (package-install package)))
-
+  
   (starter-kit-load "python" "python")
+  
+  (defun py-execute-statement-and-step ()
+    "select a statement, submit as a region and then step forward"
+    (interactive)
+    (beginning-of-line 1)
+    (let ((beg (point)))
+      (py-next-statement 1) 
+      ; if last statement.
+          (if (= (point) beg) (end-of-buffer ))
+          (py-execute-region beg (point))
+          (next-line)
+    )
+  ) 
+  
+  (custom-set-variables
+  '(py-shell-switch-buffers-on-execute nil))
+  
+  (define-key py-mode-map (quote [f9])
+  'py-execute-statement-and-step)
 #+end_src
+
+#+RESULTS:
+: py-execute-statement-and-step
 
 * ess
 
