@@ -1,3 +1,7 @@
+#+begin_src emacs-lisp
+  (load "ledger")
+#+end_src
+
 * org-mode configuration
 
 #+begin_src emacs-lisp
