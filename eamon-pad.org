@@ -9,11 +9,7 @@
 #+begin_src emacs-lisp
     (setq org-agenda-files
      '("~/projects/organizer/lab.org"
-       "~/projects/arra/hiv.org"
-       "~/projects/organizer/misc.org"
-       "~/projects/organizer/toastmasters.org"
-       "~/projects/organizer/writing.org"
-       "~/projects/noro/oda/demo/get-admb-ests-2.org"))
+       "~/projects/organizer/misc.org"))
   
   (defvar org-s5-theme "default")
   
