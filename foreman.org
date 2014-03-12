@@ -1,0 +1,8 @@
+* org-mode configuration
+
+#+begin_src emacs-lisp
+  (setq org-agenda-files
+   '("~/projects/organizer/lab.org"
+     "~/projects/organizer/misc.org"
+     "~/projects/organizer/todo.org"))
+#+end_src
