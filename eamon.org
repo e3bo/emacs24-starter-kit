@@ -79,7 +79,7 @@
   (custom-set-variables
   '(py-shell-switch-buffers-on-execute nil))
   
-  (define-key py-mode-map (quote [f9])
+  (define-key python-mode-map (quote [f9])
   'py-execute-statement-and-step)
 #+end_src
 
@@ -90,5 +90,5 @@
 
 #+BEGIN_SRC emacs-lisp
   (setq load-path (cons "/usr/share/emacs/site-lisp/ess" load-path))
-  (load "/usr/share/emacs/site-lisp/ess/ess-site")  
+  (require 'ess-site)  
 #+END_SRC

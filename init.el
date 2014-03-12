@@ -6,7 +6,9 @@
 ;;
 
 ;; Use org-mode in AUR package
-(require 'org-install)
+;;(require 'org-install)
+
+(require 'org)
 
 ;; remember this directory
 (setq starter-kit-dir
