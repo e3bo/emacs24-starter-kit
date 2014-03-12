@@ -10,6 +10,18 @@
 * org-mode configuration
 
 #+begin_src emacs-lisp
+  (custom-set-variables
+   '(org-agenda-span 7)
+   '(org-agenda-show-all-dates t)
+   '(org-agenda-skip-deadline-if-done t)
+   '(org-agenda-skip-scheduled-if-done t)
+   '(org-agenda-start-on-weekday nil)
+   '(org-capture-templates (quote (("t" "New task" entry (file+olp "~/projects/organizer/todo.org" "Tasks") "* TODO %? \n %U"))))
+   '(org-fast-tag-selection-single-key (quote expert)))
+  
+#+end_src
+
+#+begin_src emacs-lisp
   (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
   
   (global-set-key "\C-cl" 'org-store-link)
