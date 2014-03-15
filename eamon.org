@@ -69,7 +69,7 @@
 
 * python IDE configuration
 #+begin_src emacs-lisp
-  (starter-kit-load "python" "python")
+  (starter-kit-load "python")
   
   (defun py-execute-statement-and-step ()
     "select a statement, submit as a region and then step forward"
