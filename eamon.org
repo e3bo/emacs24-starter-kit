@@ -10,14 +10,35 @@
 * org-mode configuration
 
 #+begin_src emacs-lisp
+  (require 'org-protocol); for remember-mail script and below capture template
   (custom-set-variables
    '(org-agenda-span 7)
    '(org-agenda-show-all-dates t)
    '(org-agenda-skip-deadline-if-done t)
    '(org-agenda-skip-scheduled-if-done t)
    '(org-agenda-start-on-weekday nil)
-   '(org-capture-templates (quote (("t" "New task" entry (file+olp "~/projects/organizer/todo.org" "Tasks") "* TODO %? \n %U"))))
+  
+   '(org-capture-templates (quote (("m" "Mail" entry (file+olp
+   "~/projects/organizer/todo.org" "Tasks") "* TODO %^{Title}\n\n
+   Source: %u, %c\n\n  %i" :empty-lines 1)
+  
+     ("t" "New task" entry (file+olp "~/projects/organizer/todo.org"
+     "Tasks") "* TODO %? \n %U"))))
+  
    '(org-fast-tag-selection-single-key (quote expert)))
+  
+  (defun open-mail-in-mutt (message)
+    "Open a mail message in Mutt, using an external terminal.
+  
+  Message can be specified either by a path pointing inside a
+  Maildir, or by Message-ID."
+    (interactive "MPath or Message-ID: ")
+    (shell-command
+     (format "xfce4-terminal -e \"%s %s\""
+             (substitute-in-file-name "$HOME/bin/mutt-open") message)))
+  
+  ;; add support for "mutt:ID" links
+  (org-add-link-type "mutt" 'open-mail-in-mutt)
   
 #+end_src
 
@@ -87,8 +108,8 @@
   (custom-set-variables
   '(py-shell-switch-buffers-on-execute nil))
   
-  (define-key python-mode-map (quote [f9])
-  'py-execute-statement-and-step)
+  ;(define-key python-mode-map (quote [f9])
+  ;'py-execute-statement-and-step)
 #+end_src
 
 #+RESULTS:
